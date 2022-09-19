@@ -1,0 +1,21 @@
+{
+    "clear_build_path" : true,
+    "build_in": "tinc",
+    "next": [
+      {
+        "build": "docker",
+        "build_in" : "docker",
+        "config" : {
+          "base_image" : "eons/img_guest",
+          "image_name" : "eons/img_sync",
+          "image_os" : "alpine",
+          "install" : [
+            "syncthing"
+          ],
+          "tags" : [
+            "latest"
+          ]
+        }
+      }
+    ]
+  }
